@@ -90,7 +90,8 @@ ml_client.environments.create_or_update(env_docker_context)
 
 Now, in Environments > Custom environments you should see your environment:
 
-TODO: Add image
+![yolov8-environment-arrow](https://github.com/ouphi/ultralytics/assets/17216799/cc41dbe4-7a43-45e9-aa0d-b53d11d4a92d)
+
 
 ## Step 4: Create an AzureML dataset
 
@@ -164,8 +165,6 @@ wget https://raw.githubusercontent.com/ultralytics/ultralytics/main/ultralytics/
 
 We want to make sure that the AzureML job uses our custom AzureML dataset, rather than downloading it before the training, so let’s remove the last line of the custom-coco128.yaml
 
-TODO: Put a screenshot
-
 ```bash
 %%bash
 sed -i "s|download:.*$||" yolov8-training/custom-coco128.yaml
@@ -210,7 +209,7 @@ ml_client.create_or_update(training_job)
 You should be able to see your AzureML job.
 You should be able to see the Params and access the metrics logged with MLFlow
 
-TODO: Add screenshot
+<img width="1504" alt="yolov8-exp" src="https://github.com/ouphi/ultralytics/assets/17216799/074d2777-e6fe-44ef-9b4a-2291b9ca27a5">
 
 In the `Outputs + logs` tab you can find the resulting best.pt and last.pt in `yolov8-experiment/artifacts/train/weights`.
 You can find other artifacts in `yolov8-experiment/artifacts/train`.
