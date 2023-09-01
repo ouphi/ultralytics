@@ -17,7 +17,7 @@ Now from the Notebooks view, open a Terminal and select your compute.
 
 ![open-terminal-arrow](https://github.com/ouphi/ultralytics/assets/17216799/c4697143-7234-4a04-89ea-9084ed9c6312)
 
-## Run YOLOv5
+## Setup and run YOLOv5
 
 Now you can, create a virtual environment:
 
@@ -30,7 +30,9 @@ conda install pip -y
 Clone YOLOv5 repository with its submodules:
 
 ```bash
-git clone --recurse-submodules https://github.com/ultralytics/yolov5
+git clone https://github.com/ultralytics/yolov5
+cd yolov5
+git submodule update --init --recursive # Note that you might have a message asking you to add your folder as a safe.directory just copy the recommended command   
 ```
 
 Install the required dependencies:
@@ -43,7 +45,6 @@ pip install onnx>=1.10.0
 Train the YOLOv5 model:
 
 ```bash
-cd yolov5
 python train.py
 ```
 
@@ -64,3 +65,20 @@ Export models to other formats:
 ```bash
 python detect.py --weights yolov5s.pt --source path/to/images
 ```
+
+## Use a Notebook
+
+Note that if you want to run these commands from a Notebook, you need to [create a new Kernel](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal?view=azureml-api-2#add-new-kernels)
+and select your new Kernel on the top of your Notebook.
+
+If you create python cells it will automatically use your custom environment, but if you add bash cells, you will need to run `source activate <your-env>` on each of these cells
+to make sure if uses your custom environment.
+
+For example:
+
+```bash
+%%bash
+source activate newenv
+python val.py --weights yolov5s.pt
+```
+
