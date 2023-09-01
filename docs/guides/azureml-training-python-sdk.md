@@ -189,7 +189,7 @@ training_job = command(
     code="yolov8-training",
     command="""
         sed -i "s|path:.*$|path: ${{ inputs.training_data }}|" custom-coco128.yaml &&
-        yolo task=detect train data=custom-coco128.yaml model=yolov8n.pt epochs=3
+        yolo train data=custom-coco128.yaml model=yolov8n.pt epochs=3
     """,
     environment="azureml:yolov8-environment:1",
     compute="cluster-with-1-v100-gpu",
