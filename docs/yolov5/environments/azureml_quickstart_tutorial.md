@@ -17,7 +17,7 @@ Now from the Notebooks view, open a Terminal and select your compute.
 
 ![open-terminal-arrow](https://github.com/ouphi/ultralytics/assets/17216799/c4697143-7234-4a04-89ea-9084ed9c6312)
 
-## Setup and run YOLOv5
+## Step 3: Setup and run YOLOv5
 
 Now you can, create a virtual environment:
 
@@ -66,7 +66,7 @@ Export models to other formats:
 python detect.py --weights yolov5s.pt --source path/to/images
 ```
 
-## Use a Notebook
+## Notes on using a notebook
 
 Note that if you want to run these commands from a Notebook, you need to [create a new Kernel](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal?view=azureml-api-2#add-new-kernels)
 and select your new Kernel on the top of your Notebook.

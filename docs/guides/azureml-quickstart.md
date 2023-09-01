@@ -4,13 +4,14 @@ description: Azure Machine Learning YOLOv8 quickstart
 keywords: Ultralytics, YOLO, Deep Learning, Object detection, quickstart, AzureML
 ---
 
-/!\ This guide is only for quick trials from a compute terminal or on a compute Notebook.
-[This guide explains]() how you can train a model with an AzureML job.
-/!\
+/!\ Note that this guide is only for quick trials from a compute terminal or on a compute Notebook.
+[This complete guide explains](azureml-training-python-sdk.md) how you can train a model with an AzureML job.
 
 ## Step 1: Create a compute instance
 
-TODO: Add screenshot
+From your AzureML workspace, select Compute > Compute instances > New, select the compute with the resources you need.
+
+<img width="1741" alt="create-compute-arrow" src="https://github.com/ouphi/ultralytics/assets/17216799/3e92fcc0-a08e-41a4-af81-d289cfe3b8f2">
 
 ## Quickstart from terminal
 
