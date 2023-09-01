@@ -124,6 +124,8 @@ ml_client.data.create_or_update(coco_data)
 
 Now in Data > Data assets you should see your dataset.
 
+![dataset](https://github.com/ouphi/ultralytics/assets/17216799/b88bf013-ceb0-4144-b935-2de996588976)
+
 ## Step 5: Create a compute cluster instance
 
 You need to create a compute cluster to run your training. 
