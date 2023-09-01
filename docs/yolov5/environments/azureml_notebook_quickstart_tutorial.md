@@ -1,4 +1,4 @@
-# YOLOv5 🚀 on AzureML Notebook
+# YOLOv5 🚀 on AzureML compute instance
 
 This guide provides a quickstart to use YOLOv5 from an AzureML Notebook.
 
