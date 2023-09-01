@@ -13,11 +13,13 @@ From your AzureML workspace, select Compute > Compute instances > New, select th
 
 ## Step 2: Open a Terminal
 
+Now from the Notebooks view, open a Terminal and select your compute.
+
 ![open-terminal-arrow](https://github.com/ouphi/ultralytics/assets/17216799/c4697143-7234-4a04-89ea-9084ed9c6312)
 
 ## Run YOLOv5
 
-Create a virtual environment:
+Now you can, create a virtual environment:
 
 ```bash
 conda create --name yolov5env -y
