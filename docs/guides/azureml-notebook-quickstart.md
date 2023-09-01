@@ -16,7 +16,8 @@ TODO: Add screenshot
 
 Start your compute and open a Terminal:
 
-TODO: Add screenshot
+![open-terminal](https://github.com/ouphi/ultralytics/assets/17216799/635152f1-f4a3-4261-b111-d416cb5ef357)
+
 
 Create your conda virtualenv and install pip in it:
 
@@ -50,12 +51,11 @@ You can find more [instructions to use the Ultralytics cli here](https://docs.ul
 ## Quickstart from Notebook
 ### Create a new IPython kernel
 
-Open the compute Terminal
-TODO: Add screenshot
+Open the compute Terminal.
 
-From your compute terminal you can add a new ipykernel that will be used by your notebook.
+![open-terminal](https://github.com/ouphi/ultralytics/assets/17216799/635152f1-f4a3-4261-b111-d416cb5ef357)
 
-https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal?view=azureml-api-2#add-new-kernels
+From your compute terminal you need to [add a new ipykernel that will be used by your notebook to manage your dependencies](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal?view=azureml-api-2#add-new-kernels).
 
 ```bash
 conda create --name yolov8env -y
@@ -67,7 +67,7 @@ python -m ipykernel install --user --name yolov8env --display-name "yolov8env"
 
 Close your terminal and create a new notebook. From your Notebook, you can select the new kernel.
 
-Then you can install the required dependencies:
+Then you can open a Notebook cell and install the required dependencies:
 
 ```bash
 %%bash
