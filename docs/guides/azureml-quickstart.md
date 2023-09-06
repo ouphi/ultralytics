@@ -59,7 +59,7 @@ Open the compute Terminal.
 
 ![open-terminal](https://github.com/ouphi/ultralytics/assets/17216799/635152f1-f4a3-4261-b111-d416cb5ef357)
 
-From your compute terminal you need to [add a new ipykernel that will be used by your notebook to manage your dependencies](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal?view=azureml-api-2#add-new-kernels).
+From your compute terminal you need to add a new ipykernel that will be used by your notebook to manage your dependencies:
 
 ```bash
 conda create --name yolov8env -y
